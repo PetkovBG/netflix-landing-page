@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--clr-black);
-    color: var(--clr-white)
+    color: var(--clr-white);
 }
 
 /* Component button */
@@ -24,9 +24,10 @@ body {
 }
 
 .btn:hover {
-    background-color: #C9002B;
+    background-color: #f50035;
     color: var(--clr-white);
     transition: all 300ms ease-in-out;
+    transform: scale(1.05);
 }
 
 /* Header */
@@ -45,3 +46,4 @@ body {
 .header img {
     height: 40px;
 }
+
