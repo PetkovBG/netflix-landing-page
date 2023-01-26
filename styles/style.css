@@ -58,6 +58,27 @@ section {
     ;
 }
 
+@media screen and (min-width: 640px) {
+    .input-wrapper {
+        flex-wrap: nowrap;
+        row-gap: unset;
+        justify-content: start;
+        align-items: stretch;
+        width: 480px;
+    }
+
+    .input-wrapper .input {
+        width: calc(100% - 160px);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    } 
+
+    .input-wrapper .btn {
+        width: 160px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
 
 /* Header */
 
@@ -228,3 +249,4 @@ align-items: center;
     font-weight: 500;
     margin-bottom: 1rem;
 }
+
