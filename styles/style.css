@@ -16,14 +16,26 @@ body {
     color: var(--clr-white);
 }
 
+@media screen and (min-width: 768px) {
+    :root {
+        --p-x: 1.5rem; /* padding x */
+        --p-y: 3rem; /* padding y */
+
+    }
+
+    html {
+        font-size: 22px;
+    }
+}
+
 /* Component button */
 
 .btn {
     border: 2px solid var(--clr-primary);
     background-color: var(--clr-primary);
     color: var(--clr-white);
-    border-radius: 0.25rem;
-    padding: 0.125rem 0.75rem;
+    border-radius: 4px;
+    padding: 2px 8px;
     cursor: pointer;
 }
 
@@ -52,14 +64,16 @@ section {
 .input-wrapper .input {
     width: 100%;
     border: none;
-    padding: 0.75rem;
-    border-radius: 0.2rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
     box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.75);
     ;
 }
 
 @media screen and (min-width: 640px) {
     .input-wrapper {
+        margin-left: auto;
+        margin-right: auto;
         flex-wrap: nowrap;
         row-gap: unset;
         justify-content: start;
@@ -78,6 +92,27 @@ section {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
+
+    .input-wrapper .btn:hover {
+        background-color: #f50035;
+        color: var(--clr-white);
+        transform: unset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-wrapper {
+        width: 600px;
+    }
+
+    .input-wrapper .input {
+        width: calc(100% - 180px);
+    } 
+
+    .input-wrapper .btn {
+        width: 180px;
+    }
+
 }
 
 /* Header */
@@ -188,6 +223,13 @@ section {
     font-size: 1rem;
 }
 
+.feature-section .feature-img {
+    width: 100%;
+    max-width: 460px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* FAQ */
 
 #faq {
@@ -247,6 +289,7 @@ align-items: center;
 
 #faq .subscription .title {
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0px auto 1rem auto;
+    max-width: 460px;
 }
 
