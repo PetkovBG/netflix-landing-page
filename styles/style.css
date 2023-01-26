@@ -4,6 +4,10 @@
     --clr-white: #fff;
     --clr-gray: #222;
 
+    --p-x: 1rem; /* padding x */
+    --p-y: 2rem; /* padding y */
+
+
 }
 
 body {
@@ -28,6 +32,11 @@ body {
     color: var(--clr-white);
     transition: all 300ms ease-in-out;
     transform: scale(1.05);
+}
+
+/* Component section */
+section {
+    border-bottom: 7px solid var(--clr-gray);
 }
 
 /* Input section */
@@ -73,7 +82,7 @@ body {
 #hero {
     height: 100vh;
     position: relative;
-    padding: 0px 1rem;
+    padding: 0px var(--p-x);
     ;
 }
 
@@ -132,4 +141,24 @@ body {
 
 #hero .input-wrapper {
     margin-bottom: 1rem;
+}
+
+/* Feature sections */
+
+.feature-section {
+    padding: var(--p-y) var(--p-x);
+    text-align: center;
+}
+
+.feature-section .content {
+    margin-bottom: 1rem;;
+}
+
+.feature-section .content .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-section .content .desc {
+    font-size: 1rem;
 }
