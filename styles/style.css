@@ -145,6 +145,11 @@ section {
 
 /* Feature sections */
 
+.title--section {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .feature-section {
     padding: var(--p-y) var(--p-x);
     text-align: center;
@@ -155,10 +160,71 @@ section {
 }
 
 .feature-section .content .title {
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .feature-section .content .desc {
     font-size: 1rem;
+}
+
+/* FAQ */
+
+#faq {
+    padding: var(--p-y) 0px;
+}
+
+#faq .title--section {
+    margin-bottom: 1rem;
+}
+
+#faq .questions {
+    margin-bottom: 2rem;
+}
+
+#faq .questions .question {
+    background-color: var(--clr-gray);
+    padding: 0.5rem var(--p-x);
+}
+
+#faq .questions .question .line {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#faq .questions .question .line .text {
+    font-weight: 500;
+}
+
+#faq .questions .question .line .btn-icon {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    transform: all 300 ms ease-in-out;
+    cursor: pointer;
+}
+
+#faq .questions .question .line .btn-icon:hover {
+    transform: translateY(-2px);
+}
+
+#faq .questions .question .content {
+    height: 0px;
+    overflow: hidden;
+}
+
+#faq .questions > * + * {
+    margin-top: 0.5rem;
+}
+
+#faq .subscription {
+    text-align: center;
+    padding: 0px var(--p-x);
+}
+
+#faq .subscription .title {
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
